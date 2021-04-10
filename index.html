@@ -1,89 +1,588 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title> FounderByte </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="icon" type="image/ico" href="assets/images/favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FounderByte</title>
+  <!-- google font -->
+  <!-- <link rel="stylesheet" href="./css/fonts.css"> -->
+  <!-- bootstrap css -->
 
-    <!-- main css -->
-    <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
 
-    <!-- Font css -->
-    <link href="assets/fonts/fonts.css" rel="stylesheet" />
-
-    <!-- main script -->
-    <script src="assets/js/jquery-1.9.1.min.js"></script>
-    
-    <!-- general script -->
-    <script src="assets/js/script.js"></script>
-
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <!-- custom  css -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- start -->
-    <div id="wrapper">
-        <!-- header part -->
-        <header class="header">
-            <div class="container">
-                <div class="main-header">
-                    <a href="index.html" class="logo"><img src="assets/images/logo.svg" alt=""></a>
-                    <div class="menu-bar">
-                        <span class="menu-strip"></span>
-                    </div>
-                </div>
-            </div>
-        </header>   
-        <!-- content-area -->
-        <div id="content-area">
-            <section class="service-sction">
-                <div class="container">
-                    <ul class="service-list">
-                        <li class="single-service">
-                            <div class="heading">Product Strategy</div>
-                            <div class="content">
-                                <p>
-                                    We’ll sit down with you and determine whether your not the product itself even makes sense to build in the first place. In our experience, there are many solutions where we wouldn’t recommend a build.ˀˀ
-                                </p>
-                            </div>
-                        </li>
-                        <li class="single-service">
-                            <div class="heading">UX & UI Design</div>
-                            <div class="content">
-                                <p>
-                                    We implement user experience and interface best practices when designing to your requirements. We like minimizing click-to-results, removing user friction, and creating visually stunning products. 
-                                </p>
-                            </div>
-                        </li>
-                        <li class="single-service">
-                            <div class="heading">Mobile & Web apps</div>
-                            <div class="content">
-                                <p>
-                                    Kind of speaks for itself, right? Literally just breathing oxygen here with this one.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="single-service">
-                            <div class="heading">Hosting & Deployment</div>
-                            <div class="content">
-                                <p>
-                                    A lot of people forget about the before and after. Hosting and deployment need to be planned for before a build starts so nothing breaks, and actually needs to be executed after a build to launch a product.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="single-service">
-                            <div class="heading">Finance & Legal</div>
-                            <div class="content">
-                                <p>
-                                    We’re also management consultants, CPAs, and lawyers so we can actually proactively spearhead solutions to any potential problems you may face operationally.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+  <header>
+    <nav style="position: fixed"
+      class="navbar w-100 navbar-expand-lg navbar-light pt-lg-3 pb-lg-3 pt-md-3 pb-md-3">
+      <!-- bg-light -->
+      <a data-menuanchor="home" href="#home" id="headPrimary" class="navbar-brand"
+        href="#"><img src="./img/Group 651.svg" alt="logo"
+          class="img-fluid pl-lg-5 pl-md-5" /></a>
+      <a data-menuanchor="home" href="#home" id="headSecondary" class="navbar-brand logo_type2"
+        href="#"><img src="./img/Group 655.svg" alt="logo"
+          class="img-fluid pl-lg-5 pl-md-5" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="mr-auto"></div>
+        <div id="myMenu" class="navbar-nav">
+          <a data-menuanchor="home" class="nav-link active px-4 mx-2 d-none" href="#home">Home
+            <span class="sr-only">(current)</span></a>
+          <a data-menuanchor="services" href="#services" class="nav-link px-4 mx-2"
+            href="#services">Services</a>
+          <a data-menuanchor="whyus" href="#whyus" class="nav-link px-4 mx-2" href="#whyus">Why
+            Us</a>
+          <a data-menuanchor="ourwork" href="#ourwork" class="nav-link px-4 mx-2"
+            href="#ourwork">Our Work</a>
+          <a data-menuanchor="contact" href="#contact" class="nav-link px-4 mx-2"
+            href="#contact">Contact Us</a>
         </div>
-    </div>    
+      </div>
+    </nav>
+  </header>
+  <div id="load"></div>
+  <div id="fullpage">
+    <div class="section">
+      <div
+        class="container-fluid home-height pl-lg-5 pr-lg-5 pl-xl-5 pr-xl-5 pl-md-5 pr-md-5 d-lg-flex d-xl-flex d-md-flex">
+        <div class="row justify-content-between w-100 banner_row">
+          <div class="banner_imgtop col-md-12 col-lg-4 col-xl-4 col-sm-12 self-center">
+            <img src="./img/Group 666.svg" alt="" class="img-fluid" />
+          </div>
+          <div
+            class="banner_title col-md-12 col-lg-7 col-xl-7 col-sm-12 pt-lg-5 pt-xl-5 pt-xsm-5">
+            <div class="d-flex img-align pt-lg-3 pb-lg-3 pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+              <h1 class="head-1 ml-lg-4 ml-xl-4 ml-md-4">We Live Tech</h1>
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-c floating" />
+            </div>
+            <div class="head-2 ml-lg-4 ml-xl-4 ml-md-4">
+              Don’t believe us?<br /> We worked for cool companies.
+            </div>
+
+            <div class="d-flex space-between pt-lg-5 ml-lg-4 ml-md-4 otherlogo_goup">
+              <div class="pr-md-4 x1 otherlogo">
+                <img src="./img/voGxSd.tif 1.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="pr-lg-4 ml-xl-4 pr-md-4 x2 otherlogo">
+                <img src="./img/m5kEoY 2.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="pr-lg-4 ml-xl-4 pr-md-4 x3 otherlogo">
+                <img src="./img/eT4IIk.tif 2.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="pr-lg-4 ml-xl-4 pr-md-4 x4 otherlogo">
+                <img src="./img/Group 520.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="pr-lg-4 ml-xl-4 pr-md-4 x5 microsoftlogo">
+                <img src="./img/sL9TfN.tif 1.svg" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="banner col-md-12 col-lg-4 col-xl-4 col-sm-12 self-center">
+            <img src="./img/Group 666.svg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section pt-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 pr-0 pl-0 bg-blue animated-area">
+            <ul class="box-area">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+
+              <div class="d-flex align-center h-100 justify-content-center">
+                <div class="d-flex content-center img-align">
+                  <h1 class="sec-head-service text-white pr-1">
+                    We are a
+                    <span class="font-weight-bold">full service</span> firm
+                  </h1>
+                  <img src="./img/Rectangle 420.svg" alt="" class="img-fluid rec-c floating" />
+                </div>
+              </div>
+            </ul>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 vh-100">
+            <div class="vh-100">
+              <div class="row vh-100 align-center justify-content-center">
+                <div class=" col-md-8 col-sm-12 align-self-center">
+                  <div class="panel-group" id="accordion" role="tablist"
+                    aria-multiselectable="false">
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title d-flex">
+                          <img src="./img/Rectangle 425.svg" alt="" class="img-fluid rec-p" />
+                          <a role="button" data-toggle="collapse" aria-expanded="true"
+                            data-target="#collapseOne" data-parent="#accordion"
+                            aria-controls="collapseOne" class="head-6 ml-2">
+                            Product Strategy
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseOne" class="panel-collapse collapse in show"
+                        aria-expanded="true" role="tabpanel" data-parent="#accordion"
+                        aria-labelledby="headingOne">
+                        <div class="panel-body pl-3">
+                          <p>
+                            We’ll sit down with you and determine whether your
+                            not the product itself even makes sense to build
+                            in the first place. In our experience, there are
+                            many solutions where we wouldn’t recommend a
+                            build.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title d-flex">
+                          <img src="./img/Rectangle 425.svg" alt="" class="img-fluid rec-p" />
+                          <a class="collapsed head-6 ml-2" role="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            UX & UI Design
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseTwo" class="panel-collapse collapse"
+                        data-parent="#accordion" role="tabpanel" aria-labelledby="headingTwo">
+                        <div class="panel-body pl-3">
+                          <p>
+                            We implement user experience and interface best
+                            practices when designing to your requirements. We
+                            like minimizing click-to-results, removing user
+                            friction, and creating visually stunning products.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title d-flex">
+                          <img src="./img/Rectangle 425.svg" alt="" class="img-fluid rec-p" />
+                          <a class="collapsed head-6 ml-2" role="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Mobile & Web apps
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                        data-parent="#accordion" aria-labelledby="headingThree">
+                        <div class="panel-body pl-3">
+                          <p>
+                            Kind of speaks for itself, right? Literally just
+                            breathing oxygen here with this one.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title d-flex">
+                          <img src="./img/Rectangle 425.svg" alt="" class="img-fluid rec-p" />
+                          <a class="collapsed head-6 ml-2" role="button" data-toggle="collapse"
+                            data-parent="#accordion" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            Hosting & Deployment
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                        data-parent="#accordion" aria-labelledby="headingFour">
+                        <div class="panel-body pl-3">
+                          <p>
+                            A lot of people forget about the before and after.
+                            Hosting and deployment need to be planned for
+                            before a build starts so nothing breaks, and
+                            actually needs to be executed after a build to
+                            launch a product.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel">
+                      <div class="panel-heading" role="tab" id="headingFive">
+                        <h4 class="panel-title d-flex">
+                          <img src="./img/Rectangle 425.svg" alt="" class="img-fluid rec-p" />
+                          <a class="collapsed head-6 ml-2" role="button" data-toggle="collapse"
+                            data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                            aria-controls="collapseFive">
+                            Finance & Legal
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                        data-parent="#accordion" aria-labelledby="headingFive">
+                        <div class="panel-body pl-3">
+                          <p>
+                            We’re also management consultants, CPAs, and
+                            lawyers so we can actually proactively spearhead
+                            solutions to any potential problems you may face
+                            operationally.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section">
+      <div class="container why-height">
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col mr-5">
+            <div
+              class="d-flex mr-5 content-center img-align pt-lg-3 pb-lg-3 pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+              <h1 class="sec-head-3 ml-lg-4 ml-xl-4 ml-md-4">Why Us?</h1>
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-c floating" />
+            </div>
+          </div>
+        </div>
+        <!-- why-height -->
+        <div class="row  why-listing space-evenly">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img src="./img/Group 659.svg" alt="" class="img-fluid" width="150px" />
+            <div class="pt-3 pb-3 d-flex why-list-title">
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-p" />
+              <div class="head-3 pl-2 font-roboto-400">Integrity</div>
+            </div>
+            <div class="pl-2 why-p">
+              For real. What’s with all the scammers out there?<br />We’ll
+              quote you what we think the effort is and maintain full
+              transparency throughout the process.
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img src="./img/Group 660.svg" alt="" class="img-fluid" width="150px" />
+            <div class="pt-3 pb-3 d-flex why-list-title">
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-p" />
+              <div class="head-3 pl-2 font-roboto-400">Collaboration</div>
+            </div>
+            <div class="pl-2 why-p">
+              We don’t win unless you win, which means we actually listen,
+              discuss, and implement what you actually want.
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <img src="./img/Group 661.svg" alt="" class="img-fluid" width="150px" />
+            <div class="pt-3 pb-3 d-flex why-list-title">
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-p" />
+              <div class="head-3 pl-2 font-roboto-400">Quality</div>
+            </div>
+            <div class="pl-2 why-p">
+              No shortcuts. Best tools.<br />
+              We’ll make sure your build is done right, guaranteed.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- why us slider -->
+
+    <div class="section pt-0">
+      <div class="bg-blue-2">
+        <div class="container c-container ">
+          <div class="row space-between">
+            <div class="col-md-4 col-sm-12 pt-5 mt-5">
+              <div class="d-flex content-flex-end img-align pb-3">
+                <h1 class="sec-head-5 text-white pr-1">People</h1>
+                <img src="./img/Rectangle 420.svg" alt="" class="img-fluid rec-c floating" />
+              </div>
+              <div class="d-flex content-flex-end">
+                <h1 class="sec-head-5 text-white pr-2 pb-3">
+                  seem to like us
+                </h1>
+              </div>
+              <div class="d-flex content-flex-end">
+                <h1 class="sec-para-5 text-white pr-2">
+                  That counts for something, right?
+                </h1>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12 pr-0">
+              <!-- Carousel wrapper -->
+
+              <div id="carouselMultiItemExample" class="carousel slide carousel-dark  "
+                data-mdb-ride="carousel">
+                <!--  -->
+                <!-- Controls -->
+                <div class="d-flex mb-4 slider_button">
+                  <button class="carousel-control-prev position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <div class="carousel-indicators" style="position: relative">
+                    <button type="button" data-mdb-target="#carouselMultiItemExample"
+                      data-mdb-slide-to="0" class="active" aria-current="true"
+                      aria-label="Slide 1"></button>
+                    <button type="button" data-mdb-target="#carouselMultiItemExample"
+                      data-mdb-slide-to="1" aria-label="Slide 2"></button>
+                  </div>
+                  <button class="carousel-control-next position-relative" type="button"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <!-- Inner -->
+                <div class="carousel-inner">
+                  <!-- Single item -->
+                  <div class="carousel-item active">
+                    <div class="container bg-white h-500">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12 py-2 d-flex flex-end">
+                              <div class="visit_btn">
+                                <a class="btn btn-outline-primary" href="#" role="button">Visit
+                                  Praizl</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="height: 120px" class="row align-center slider_content">
+                            <div
+                              class="col-md-3 d-flex justify-content-center slider_captionimg">
+                              <img src="./img/Group 687.svg" alt="" class="img-fluid" />
+                            </div>
+                            <div class="col-md-9 slider_ele">
+                              <div class="d-flex">
+                                <img src="./img/coma.svg" alt="" width="15px"
+                                  class="img-fluid" />
+                              </div>
+                              <div class="pl-4 pt-1  midi-desc-font" style="font-size: 13px">
+                                Praizl is FounderByte’s inhouse pet project
+                                that we work on in our free time to show our
+                                capabilities. We leverage a back-end data lake
+                                structure, and ML, AI, and NLP to provide
+                                users on the platform with more custom
+                                tailored home search results.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                            <img src="./img/pxl.svg" alt="" class="img-fluid fit-cover"
+                              width="100%" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right-controler carousel-control-next"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next"></div>
+
+                  <!-- Single item -->
+                  <div class="carousel-item">
+                    <div class="container bg-white h-500">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12 py-2 d-flex flex-end">
+                              <div class="visit_btn">
+                                <a class="btn btn-outline-primary" style="    text-transform: none !important;
+                                " href="#" role="button">Coming soon</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div style="height: 120px" class="row align-center slider_content">
+                            <div
+                              class="col-md-3 pb-1 d-flex justify-content-center slider_captionimg">
+                              <img style="height: 100px" src="./img/image 46.svg" alt=""
+                                class="img-fluid" />
+                            </div>
+                            <div class="col-md-9 slider_ele">
+                              <div class="d-flex" style=" margin-left: -13px;">
+                                <img src=" ./img/coma.svg" alt="" width="15px"
+                                  class="img-fluid" />
+                              </div>
+                              <div class="pl-2  midi-desc-font-roboto"
+                                style="font-size: 13px !important;                              ">
+                                midiapp gives users’ the ability to record
+                                vocals and instrumentals over preexisting
+                                tracks that have gained popularity on the
+                                app’s platform. By allowing users to select
+                                and deselect which tracks they wish to record
+                                over, midiapp allows for one’s music process
+                                to become a colloborative and fun fun process.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 bg-red">
+                            <img src="./img/Group 694.svg" alt="" class="img-fluid fit-cover"
+                              width="100%" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right-controler carousel-control-next"
+                    data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next"></div>
+
+                  <!-- Single item -->
+                </div>
+                <!-- Inner -->
+              </div>
+
+              <!-- Carousel wrapper -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="position: relative" class="section last-page pb-0">
+      <div class="container cc-container mb-5">
+        <div class="row contact-height-center align-center ccustom-form">
+          <div id="messagebox" class="col-lg-6 col-md-12 col-sm-12 form_title">
+            <div id="toast" class="messages"></div>
+            <div class="lets-work ">Let’s work Together!</div>
+            <div class="d-flex img-align pt-lg-3 pb-lg-3 pt-xl-3 pb-xl-3 pt-md-3 pb-md-3">
+              <h1 class="contact-us">Contact us</h1>
+              <img src="./img/Rectangle 401.svg" alt="" class="img-fluid rec-c floating" />
+            </div>
+            <div class="lets-work">
+              We’ll reach out to you within one<br />
+              business day.
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+
+            <form id="contact-form" class="needs-validation" novalidate>
+
+              <div class="row mb-4 input_text">
+                <div class="col col-lg-6 col-md-6 col-12">
+                  <div class="form-outline pb-1 form_name">
+                    <input type="text" id="form_full_name" class="form-control form-control-lg"
+                      placeholder="Enter full name" required />
+                    <div class="invalid-feedback">
+                      Please enter full name.
+                    </div>
+                    <label class="form-label" for="form_full_name">Full name</label>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-12">
+                  <div class="form-outline">
+                    <input type="text" id="form_companyname"
+                      class="form-control form-control-lg"
+                      placeholder="Enter company (optional)" />
+                    <label class="form-label" for="form3Example2">Company name</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4 input_text">
+                <div class="col col-lg-6 col-md-6 col-12">
+                  <div class="form-outline">
+                    <input type="email" id="form_email" class="form-control form-control-lg"
+                      placeholder="Enter email address" required />
+                    <div class="invalid-feedback">
+                      Valid email is required.
+                    </div>
+                    <label class="form-label" for="form_email">Email address</label>
+                  </div>
+                </div>
+                <div class="col col-lg-6 col-md-6 col-12">
+                  <div class="form-outline">
+                    <input type="tel" id="form_phone" class="form-control form-control-lg"
+                      placeholder="Enter phone number (optional)" />
+                    <label class="form-label" for="form_phone">Phone</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group pb-4 form_textarea" style="padding-bottom: 1.5px;">
+                <label for="form_message" class="font-weight-bold help">How can we help?
+                </label>
+                <textarea class="form-control" id="form_message" rows="5"
+                  placeholder="Enter message" required></textarea>
+                <div class="invalid-feedback ">
+                  <span class="text-center"> Please, leave us a message.</span>
+
+                </div>
+              </div>
+              <div class="submit_btn">
+                <button type="submit" class="btn submit-btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class=" container-fluid bg-black p-4 px-5">
+          <div class="row">
+            <div class="col-md-6 text-white d-flex footer_content">
+              <div class="col-md-7 footer_contact">
+                <h3 class="footer-contact text-white ">Contact Us</h3>
+                <div class="footer-address">
+                  <img class="pb-2" src="./img/mail_24px_outlined.svg" alt="" /><a
+                    href="Info@founderbyte.com"
+                    class="pl-1 text-white">info@founderbyte.com</a>
+                </div>
+                <div class="d-flex footer-address">
+                  <img src="./img/location_on_24px_outlined.svg" alt="" />
+                  <div class="pl-1">Toronto, ON</div>
+                </div>
+              </div>
+              <div class="col-md-6 footer_social">
+                <h3 class="footer-contact text-white">Social Links</h3>
+                <div>
+                  <a href="" class="pr-1"><img src="./img/x33 0Eyik.tif 1.svg" alt="" /></a>
+                  <a href="" class="pr-1"><img src="./img/Ljl5FB 2.svg" alt="" /></a>
+                  <a href="" class="pr-1"><img src="./img/x30 oqlhE.tif 1.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 text-white d-flex flex-end">
+              <div class="footer_logo">
+                <a data-menuanchor="home" href="#home"> <img src="./img/Group 655.svg"
+                    alt="" /> </a>
+                <div class="footer-copyright">© copyright 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <!-- jquery js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+    integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script> -->
+
+  <!-- bootstrap js -->
+
+  <script src="./js/fullpage.js"></script>
 </body>
+
 </html>
