@@ -1,8 +1,0 @@
-name: Founderbyte
-static_sites:
-- environment_slug: html
-  github:
-    branch: main
-    deploy_on_push: true
-    repo: mershab99/Founderbyte
-  name: Founderbyte-HTML
