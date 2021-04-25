@@ -6,9 +6,11 @@ const options = {
   wasmPath: './gkweb_bg.wasm',
 };
 
+const canvas = document.getElementById("globekit-canvas");
+
 this.gkview = new GlobeKitView(canvas, options);
 
-this.icosphere = new Icosphere('disk-3.png');
+this.icosphere = new Icosphere('./disk-3.png');
 
 this.gkview.addDrawable(this.icosphere, () => {
   this.gkview.startDrawing();
