@@ -1,94 +1,40 @@
-<!DOCTYPE HTML>
-
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Aquaries</title>
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="" />
-    <meta name="keywords" content="">
-    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-    <link rel="icon" type="image/png" href="images/Union.png" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+    }
 
-    <!-- main css -->
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/responsive.css" rel="stylesheet" />
+    #globekit-container {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
 
-    <!-- Font css -->
-    <link href="fonts/styles.css" rel="stylesheet" />
+    #globekit-canvas {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
 
-    <!-- main script -->
-    <script src="js/jquery-1.11.2.min.js"></script>
-
-    <!-- general script -->
-    <script src="js/script.js"></script>
-
+  <script type="module" src="script.js"></script>
 </head>
 
 <body>
-
-    <!-- start -->
-    <div id="wrapper">
-
-        <!-- banner area part -->
-        <section class="banner">
-            <div class="banner-caption">
-                <div class="blub-img">
-                    <img src="images/blub.svg" alt="">
-                </div>
-                <div class="logo">
-                    <img src="images/logo.svg" alt="">
-                </div>
-                <p>Improving businesses through strategy, technology, and process.</p>
-                <a href="#" class="btn">Contact Us</a>
-            </div>
-        </section>
-
-        <footer class="footer">
-            <ul class="brands">
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/praiz.svg" alt="">
-                    </a>
-                </li>
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/solvebook.svg" alt="">
-                    </a>
-                </li>
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/founderbyte.svg" alt="">
-                    </a>
-                </li>
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/cpa.svg" alt="">
-                    </a>
-                </li>
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/delottie.svg" alt="">
-                    </a>
-                </li>
-                <li class="brands-single">
-                    <a href="#" target="_blank">
-                        <img src="images/redpanda.svg" alt="">
-                    </a>
-                </li>
-            </ul>
-            <div class="copyright">
-                <div class="small-logo">
-                    <img src="images/Union.svg" alt="">
-                </div>
-                <p class="copyright-txt">© Copyright 2021 Aquaries & Company Inc.</p>
-                <a class="email-link" href="mailto:hi@aquaries.co">hi@aquaries.co</a>
-            </div>
-        </footer>
-    </div>
-
+  <div id="globekit-container">
+    <canvas id="globekit-canvas"></canvas>
+  </div>
 </body>
 
 </html>
